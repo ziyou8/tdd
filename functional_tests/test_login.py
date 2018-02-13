@@ -25,7 +25,7 @@ class LoginTest(FunctionalTest):
 
         # She checks her email and finds a message
         email = mail.outbox[0]
-        self.assertIn(TEST_MAIL. email.to)
+        self.assertIn(TEST_EMAIL, email.to)
         self.assertEqual(email.subject, SUBJECT)
 
         # It has a url link in it
